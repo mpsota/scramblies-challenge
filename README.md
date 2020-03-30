@@ -7,9 +7,11 @@ Only lower case letters will be used (a-z). No punctuation or digits will be inc
 Performance needs to be considered
 
 ### Examples:
+```
 (scramble? "rekqodlw" "world") ==> true
 (scramble? "cedewaraaossoqqyt" "codewars") ==> true
 (scramble? "katas" "steak") ==> false
+```
 
 ## Task 2
 Create a web service that accepts two strings in a request and applies function scramble? from previous task to them.
@@ -21,8 +23,15 @@ Create a UI in ClojureScript with two inputs for strings and a scramble button. 
 Please pay attention to tests, code readability and error cases.
 
 ## Usage
-
-FIXME
+### REPL
+```
+$ lein repl
+=> (scramble? "rekqodlw" "world")
+```
+### Tests
+```
+$ lein test
+```
 
 ## License
 
