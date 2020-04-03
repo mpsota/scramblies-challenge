@@ -1,6 +1,6 @@
 (ns scrablies-challenge.core-test
   (:require [clojure.test :refer :all]
-            [scrablies-challenge.core :refer :all]
+            [scrablies-challenge.algorithms :refer [scramble?]]
             [clojure.test.check.generators :as gen]
             [clojure.string :as str]))
 
