@@ -1,7 +1,7 @@
 (ns scrablies-challenge.api
   (:require [compojure.core :refer [routes ANY defroutes GET]]
             [compojure.route :as route]
-            [liberator.core :refer [defresource log!]]
+            [liberator.core :refer [defresource log! to-location]]
             [liberator.dev :refer [wrap-trace]]
             [clojure.spec.alpha :as s]
             [scrablies-challenge.algorithms :refer [scramble?]]
@@ -16,9 +16,11 @@
 
 (defresource index-html
   :handle-exception basic-error-handler
-  :available-media-types ["application/json"]
+  :available-media-types ["text/html"]
   :allowed-methods [:get]
-  :handle-ok "Use /index.html")
+  :existed? true
+  :exists? false
+  :moved-permanently? (fn [_ctx] {:location "index.html"}))
 
 (defresource scramble [available-letters word-string]
   :handle-exception basic-error-handler

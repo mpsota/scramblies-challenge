@@ -1,0 +1,31 @@
+{
+  "name": "scrablies-challenge",
+  "version": "1.0.0",
+  "description": "Complete the function (scramble str1 str2) that returns true if a portion of str1 characters can be rearranged to match str2, otherwise returns false",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "semantic-ui-react": "^0.88.2",
+    "shadow-cljs": "^2.8.94"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpsota/scramblies-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpsota/scramblies-challenge/issues"
+  },
+  "homepage": "https://github.com/mpsota/scramblies-challenge#readme"
+}

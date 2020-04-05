@@ -28,6 +28,19 @@ Please pay attention to tests, code readability and error cases.
 $ lein repl
 => (scramble? "rekqodlw" "world")
 ```
+### API
+```
+$ lein repl 
+=> (start) ;; starts the webserver
+```
+### UI
+```
+$ npm install
+$ npx shadow-cljs release app
+$ lein run
+Enter http://localhost:3001/index.html
+```
+
 ### Tests
 ```
 $ lein test
@@ -35,7 +48,7 @@ $ lein test
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020 Michał Psota
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

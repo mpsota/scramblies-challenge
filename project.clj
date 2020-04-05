@@ -1,6 +1,6 @@
 (defproject scrablies-challenge "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Web application to test if subset of letters in first string, can be rearranged to match the second"
+  :url "http://github.com/mpsota"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url  "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
@@ -20,7 +20,8 @@
                  [liberator "0.15.2"]
                  [thheller/shadow-cljs "2.8.90"]
                  [reagent "0.8.1"]
-                 [cljs-ajax "0.8.0"]]
+                 [cljs-ajax "0.8.0"]
+                 [binaryage/devtools "1.0.0"]]
   :plugins [[lein-environ "1.1.0"]]
   :main ^:skip-aot scrablies-challenge.core
   :repl-options {:init-ns dev}
